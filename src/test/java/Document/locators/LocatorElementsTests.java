@@ -39,7 +39,6 @@ public class LocatorElementsTests extends BaseTests {
 
     @Test
     public void testFindElement6(){
-        System.out.println(homePage.searchCssElementOnPage6());
         assertTrue(homePage.searchCssElementOnPage6().contains("Reset 2"),
                 "Searched element incorrect");
     }

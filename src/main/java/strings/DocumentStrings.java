@@ -11,7 +11,7 @@ public class DocumentStrings {
         this.element3="body:nth-child(2) div.container:nth-child(1) menu:nth-child(10) > li:nth-child(1)";
         this.element4="body:nth-child(2) div.container:nth-child(1) dir:nth-child(12) > li:nth-child(3)";
         this.element5="#but";
-        this.element6="#f01";
+        this.element6="body:nth-child(2) div.container:nth-child(1) form:nth-child(15) div:nth-child(4) > label:nth-child(1)";
         this.element7="div.container:nth-child(1) form:nth-child(15) div:nth-child(11) select:nth-child(3) > option:nth-child(3)";
         this.element8="div.container:nth-child(1) table:nth-child(18) tbody:nth-child(2) tr:nth-child(4) > td:nth-child(3)";
         this.element9="body:nth-child(2) div.container:nth-child(1) > p:nth-child(23)";
