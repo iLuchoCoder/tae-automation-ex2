@@ -11,6 +11,7 @@ public class LoginPage {
     private By usernameField = By.cssSelector(facebookStrings.getElement1());
     private By passwordField = By.cssSelector(facebookStrings.getElement2());
     private By loginButton = By.tagName(facebookStrings.getElement3());
+    private By onPage = By.linkText(facebookStrings.getElement7());
 
     public LoginPage(WebDriver driver){
         this.driver = driver;
@@ -27,5 +28,9 @@ public class LoginPage {
     public TimelinePage clickLoginButton(){
         driver.findElement(loginButton).click();
         return new TimelinePage(driver);
+    }
+
+    public String getOnPageAlert(){
+        return driver.findElement(onPage).getText();
     }
 }

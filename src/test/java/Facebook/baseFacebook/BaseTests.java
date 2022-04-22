@@ -2,6 +2,7 @@ package Facebook.baseFacebook;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.facebook.LoginPage;
@@ -15,7 +16,9 @@ public class BaseTests {
     @BeforeClass
     public void SetUpDocument(){
         System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-notifications");
+        driver = new ChromeDriver(options);
         driver.get(elementsFacebook.getUrl());
         driver.manage().window().maximize();
 

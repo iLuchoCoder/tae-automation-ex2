@@ -1,24 +1,25 @@
 package strings;
 
 public class FacebookStrings {
-    private String url, username, password, element1,element2,element3,element4,element5,element6,element7,element8,element9,element10;
+    private String url, username, password, element1,element2,element3,element4,element5,element6,element7,element8,element9,element10, element11;
 
     // You have to setup your own facebook credentials before execute the test
     public FacebookStrings(){
         super();
         this.url="https://www.facebook.com/";
-        this.username="";
-        this.password="";
-        this.element1="#email";
-        this.element2="#pass";
-        this.element3="button";
-        this.element4="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/div[1]/a[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]";
-        this.element5="";
-        this.element6="";
-        this.element7="";
-        this.element8="";
-        this.element9="";
-        this.element10="";
+        this.username = "";
+        this.password = "";
+        this.element1 = "#email";
+        this.element2 = "#pass";
+        this.element3 = "button";
+        this.element4 = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/div[1]/a[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]";
+        this.element5 = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[1]/span[1]/div[1]/div[1]";
+        this.element6 = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[4]/div[1]";
+        this.element7 = "¿Olvidaste tu contraseña?";
+        this.element8 = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]";
+        this.element9 = "Amigos";
+        this.element10 = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/a[1]/div[1]";
+        this.element11 = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/h1[1]";
     }
 
     public String getUrl() {
@@ -71,5 +72,9 @@ public class FacebookStrings {
 
     public String getElement10() {
         return element10;
+    }
+
+    public String getElement11() {
+        return element11;
     }
 }

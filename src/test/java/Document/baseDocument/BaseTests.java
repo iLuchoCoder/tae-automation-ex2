@@ -2,6 +2,7 @@ package Document.baseDocument;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import pages.document.HomePage;
@@ -17,7 +18,9 @@ public class BaseTests {
     @BeforeClass
     public void SetUpDocument(){
         System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-notifications");
+        driver = new ChromeDriver(options);
         driver.get(elementsDocument.getUrl());
         driver.manage().window().maximize();
 
